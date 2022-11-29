@@ -13,3 +13,19 @@ const filme = {
 };
 
 // respostas aqui ⬇️
+
+// a)
+console.log(filme.elenco[0])
+
+// b)
+console.log(filme.elenco[filme.elenco.length-1])
+
+// c)
+let texto = ''
+filme.transmissoesHoje.forEach(function(transmissao){
+	texto += ` Canal: ${transmissao.canal} | Horário: ${transmissao.horario}\n\n`
+})
+console.log(texto)
+
+// d)
+console.log(`Canal Brasil: ${filme.transmissoesHoje[1].horario}`)
